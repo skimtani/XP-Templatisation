@@ -11,6 +11,7 @@ env:
   SolutionfileName: Neptune.sln
   PackageName: Neptune.web
   OutputDirectory: ${{ github.workspace }}\deploy\artifacts
+  SCSPackageName: NeptuneSerialization
 
 
 jobs:
@@ -29,6 +30,8 @@ jobs:
         PackageName: ${{env.PackageName}}
         Version_Full: ${{ env.Version_Full }}
         OutputDirectory: ${{ env.OutputDirectory }}
+        SCSPackageName: ${{ env.SCSPackageName }}
+        
 
 
 
