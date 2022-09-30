@@ -1,0 +1,29 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_number:
+        description: 'Package Version'
+        required: true
+        default: 'latest'
+# env:
+#   run_number: 'latest'
+# env:
+#   ENVIRONMENT: development
+
+jobs:
+  GetArtifacts:
+    uses: ./.github/workflows/download-artifacts.yml
+    with:
+      run_number: ${{ github.event.inputs.run_number }}
+  DEV-CM:
+    uses: ./.github/workflows/ci-release-template-cm.yml
+    needs: GetArtifacts
+    with:
+      environment: DEV-CM
+  DEV-CD:
+    uses: ./.github/workflows/ci-release-template-cd.yml
+    needs: GetArtifacts
+    with:
+      environment: DEV-CD

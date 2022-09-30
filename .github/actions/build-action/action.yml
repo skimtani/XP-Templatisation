@@ -1,0 +1,29 @@
+name: 'Build Action'
+description: ''
+inputs:
+  SolutionfileName:
+    description: 'Name of the solution file'
+    required: true
+    default: ''
+  Version_Full:
+    description: 'Version number'
+    required: true
+    default: ''
+runs:
+  using: "composite"
+  steps:
+    - name: list files
+      run: dir ${{ github.workspace }}
+      shell: pwsh
+    - name: Perform Install NuGet Tool
+      uses: NuGet/setup-nuget@v1.0.6
+      with:
+        nuget-version: latest
+    - name: Restore dependencies
+      run: nuget restore ${{inputs.SolutionfileName}} -configfile nuget.config
+      shell: pwsh
+    - name: Perform Installing MsBuild Tool 
+      uses: microsoft/setup-msbuild@v1.1
+    - name: Perform Building Solution    
+      run: msbuild ${{ github.workspace }}\Neptune.Project\Neptune.Project.csproj /p:platform="AnyCPU" /p:configuration="Release" /p:DeployonBuild=true /p:PublishProfile="DevOps"
+      shell: pwsh

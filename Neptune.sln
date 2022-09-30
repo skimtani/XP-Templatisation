@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{445A7476-B919-4B57-BB49-1EE94A43138C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{B92624EE-C81C-43E1-9A7C-880D6A1EBBC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{83CEBAC3-510E-426B-A6DF-AA85673C7EC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Build", "_Build", "{81BFAB8A-79CC-4211-8E7F-B62D6EB35DE5}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neptune.Feature", "Neptune.Feature\Neptune.Feature.csproj", "{BE83B5FE-2D7F-41FD-8F81-61933179D132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neptune.Foundation", "Neptune.Foundation\Neptune.Foundation.csproj", "{6E690EED-31B2-430F-95C4-3DE3A3031DBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neptune.Project", "Neptune.Project\Neptune.Project.csproj", "{4580388F-D702-490A-A0EE-587624E9E3B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Environment", "Environment", "{8F42AF06-0C36-45FA-9646-B855F4C90097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neptune.Environment", "Neptune.Environment\Neptune.Environment.csproj", "{9AC2D230-88DB-4007-B5EF-86BBBF4952AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE83B5FE-2D7F-41FD-8F81-61933179D132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE83B5FE-2D7F-41FD-8F81-61933179D132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE83B5FE-2D7F-41FD-8F81-61933179D132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE83B5FE-2D7F-41FD-8F81-61933179D132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E690EED-31B2-430F-95C4-3DE3A3031DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E690EED-31B2-430F-95C4-3DE3A3031DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E690EED-31B2-430F-95C4-3DE3A3031DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E690EED-31B2-430F-95C4-3DE3A3031DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4580388F-D702-490A-A0EE-587624E9E3B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4580388F-D702-490A-A0EE-587624E9E3B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4580388F-D702-490A-A0EE-587624E9E3B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4580388F-D702-490A-A0EE-587624E9E3B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AC2D230-88DB-4007-B5EF-86BBBF4952AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC2D230-88DB-4007-B5EF-86BBBF4952AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC2D230-88DB-4007-B5EF-86BBBF4952AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC2D230-88DB-4007-B5EF-86BBBF4952AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE83B5FE-2D7F-41FD-8F81-61933179D132} = {445A7476-B919-4B57-BB49-1EE94A43138C}
+		{6E690EED-31B2-430F-95C4-3DE3A3031DBB} = {B92624EE-C81C-43E1-9A7C-880D6A1EBBC5}
+		{4580388F-D702-490A-A0EE-587624E9E3B6} = {83CEBAC3-510E-426B-A6DF-AA85673C7EC0}
+		{9AC2D230-88DB-4007-B5EF-86BBBF4952AA} = {8F42AF06-0C36-45FA-9646-B855F4C90097}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC244CD9-3B61-42A9-8F76-A73FB693FE74}
+	EndGlobalSection
+EndGlobal

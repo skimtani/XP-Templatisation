@@ -1,0 +1,25 @@
+name: PR 
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+
+env:
+  # TDS_Key: bvrg-af5-32c-d0cx
+  # TDS_Owner: Horizontal Integration
+  Version_Full: 0.0.${{github.run_number}}
+  SolutionfileName: Neptune.sln
+  PackageName: Neptune.web
+
+
+jobs:
+  prbuild:
+    runs-on: windows-2019
+    steps:
+    - uses: actions/checkout@v3
+    - name: Initiate build action
+      uses: ./.github/actions/build-action/
+      with:
+        SolutionfileName: ${{ env.SolutionfileName }}
+        Version_Full: ${{ env.Version_Full }}

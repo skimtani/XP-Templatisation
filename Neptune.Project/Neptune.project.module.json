@@ -1,0 +1,15 @@
+{
+  "namespace": "Neptune.project",
+  "items": {
+    "includes": [
+      {
+        "name": "Content",
+        "path": "/sitecore/content/Neptune Tenant Folder"
+      },
+      {
+        "name": "Template",
+        "path": "/sitecore/Templates/Project/Neptune Tenant Folder"
+      }
+    ]
+  }
+}

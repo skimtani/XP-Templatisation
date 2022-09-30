@@ -1,0 +1,18 @@
+﻿@model Neptune.Feature.Models.TitleComponentModel
+
+@{ if (Model != null)
+  {
+    if (Model.Title != string.Empty)
+    {
+      <h1 class="title">Horizontal + @Model.Title </h1>
+    }
+    else
+    {
+      <h1>Client Name is Empty</h1>
+    }
+  }
+  else
+  {
+    <h1>Model is null.</h1>
+  }
+}

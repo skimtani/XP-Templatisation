@@ -1,0 +1,19 @@
+{
+  "$schema": "./.sitecore/schemas/RootConfigurationFile.schema.json",
+  "modules": [
+    "./*/*.module.json"
+  ],
+  "plugins": [
+    "Sitecore.DevEx.Extensibility.Serialization@4.2.0",
+    "Sitecore.DevEx.Extensibility.Publishing@4.2.0",
+    "Sitecore.DevEx.Extensibility.Indexing@4.2.0",
+    "Sitecore.DevEx.Extensibility.ResourcePackage@4.2.0"
+  ],
+  "serialization": {
+    "defaultMaxRelativeItemPathLength": 100,
+    "defaultModuleRelativeSerializationPath": "serialization",
+    "removeOrphansForRoles": true,
+    "continueOnItemFailure": false,
+    "excludedFields": []
+  }
+}

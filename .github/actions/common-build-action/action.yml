@@ -1,0 +1,62 @@
+name: 'Common Build Action'
+description: ''
+inputs:
+  PackageName:
+    description: 'Name of the package'
+    required: true
+    default: ''
+  Version_Full:
+    description: 'Version number'
+    required: true
+    default: '' 
+runs:
+  using: "composite"
+  steps:
+    - name: list files
+      run: dir ${{ github.workspace }}
+      shell: pwsh
+    
+    - name: Combine Modules
+      shell: pwsh
+      working-directory: ${{ github.workspace }}\az-pipelines-scripts\scripts
+      run: |
+        ./Combine-NuGetPackages.ps1 -PackageName ${{ inputs.PackageName }} -OutputDirectory "${{ github.workspace }}\deploy\artifacts" -InputDirectory "${{ github.workspace }}\deploy\workdir" -TempDirectory "${{ github.workspace }}\deploy\workdir\temp" -Version "${{ inputs.Version_Full }}"
+    
+    - name: list files
+      run: dir ${{ github.workspace }}
+      shell: pwsh
+    
+    - name: Preparing TDS Package NuGet Files
+      working-directory: ${{ github.workspace }}\az-pipelines-scripts\scripts
+      shell: pwsh
+      run: |
+        ./Create-TdsWDPNugetPackagesFromDirectory.ps1 -OutputDirectory ${{ github.workspace }}\deploy\artifacts -InputDirectory ${{ github.workspace }}\deploy\artifacts\WebDeploy_Release -Version "${{ inputs.Version_Full }}"
+    
+    - name: Publishing Package Number
+      shell: pwsh
+      run: |
+        Set-Content -Path ${{ github.workspace }}\deploy\artifacts\build.txt -Value "${{ inputs.Version_Full }}"
+    
+    - name: Listing packages
+      shell: pwsh
+      run: |
+        dir ${{ github.workspace }}\deploy\artifacts
+
+    - name: Add private GitHub registry to NuGet
+      shell: pwsh
+      run: dotnet nuget add source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json --name github --username ${{ github.repository_owner }} --password ${{ github.token }}
+    
+    - name: Push generated package to GitHub registry
+      shell: pwsh
+      run: |
+        dotnet nuget push ${{ github.workspace }}\deploy\artifacts\Ucare.web.*.nupkg --api-key ${{ github.token }} --source github
+        dotnet nuget push ${{ github.workspace }}\deploy\artifacts\Ucaresc-package.*.nupkg --api-key ${{ github.token }} --source github
+    # - uses: actions/upload-artifact@v3
+    #   with:
+    #     name: ${{ inputs.PackageName }}-${{ inputs.Version_Full }}
+    #     path: ${{ github.workspace }}\deploy\artifacts\*.nupkg
+    
+    - uses: actions/upload-artifact@v3
+      with:
+        name: build.txt
+        path: ${{ github.workspace }}\deploy\artifacts\build.txt

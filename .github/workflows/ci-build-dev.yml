@@ -1,0 +1,36 @@
+name: Build
+
+on: [workflow_dispatch]
+  # push:
+  #   branches: [ "main" ]
+
+env:
+  # TDS_Key: bvrg-af5-32c-d0cx
+  # TDS_Owner: Horizontal Integration
+  Version_Full: 0.0.${{github.run_number}}
+  SolutionfileName: Neptune.sln
+  PackageName: Neptune.web
+
+
+jobs:
+  devbuild:
+    runs-on: windows-2019
+    steps:
+    - uses: actions/checkout@v3
+    - name: Initiate build action
+      uses: ./.github/actions/build-action/
+      with:
+        SolutionfileName: ${{ env.SolutionfileName }}
+        Version_Full: ${{ env.Version_Full }}
+    - name: Listing packages
+      run: dir ${{ github.workspace }}\\deploy\artifacts\
+      shell: pwsh
+    # - name: Initiate common action
+    #   uses: ./.github/actions/common-build-action/
+    #   with:
+    #     PackageName: ${{env.PackageName}}
+    #     Version_Full: ${{ env.Version_Full }}
+
+
+
+  

@@ -1,0 +1,31 @@
+name: Download Artifacts
+
+on:
+  workflow_call:
+    inputs:
+      run_number:
+        required: true
+        type: string
+
+# permissions:
+#       id-token: write
+#       contents: read
+
+jobs:
+  download-job:
+    name: Download Artifacts
+    runs-on: windows-latest
+    outputs:
+      build-and-verify: ${{ steps.set-output-defaults.outputs.build-and-verify }}
+    steps:
+    - uses: actions/checkout@v3
+    - name: Download Latest Build Artifacts
+      uses: ./.github/actions/download-latest-artifacts-action/
+      with:
+        run_number: ${{ inputs.run_number }}
+      if: ${{ inputs.run_number == 'latest' }}
+    - name: Download Specific Build Artifacts
+      uses: ./.github/actions/download-specific-artifacts-action/
+      with:
+        run_number: ${{ inputs.run_number }}
+      if: ${{ inputs.run_number != 'latest' }}

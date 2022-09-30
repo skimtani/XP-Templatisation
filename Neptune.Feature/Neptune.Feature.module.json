@@ -1,0 +1,11 @@
+{
+  "namespace": "Neptune.Feature",
+    "items": {
+      "includes": [
+        {
+          "name": "Renderings",
+          "path": "/sitecore/layout/Renderings/Feature/Neptune"
+        }
+      ]
+    }
+  }

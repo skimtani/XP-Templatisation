@@ -1,0 +1,19 @@
+name: CD Workflow
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: false
+        type: string
+
+jobs:
+  cd-job:
+    name: CD Deployment
+    runs-on: windows-latest
+    environment: ${{ inputs.environment }}
+    steps:
+      - name: print hello
+        shell: pwsh
+        run: ls
+    

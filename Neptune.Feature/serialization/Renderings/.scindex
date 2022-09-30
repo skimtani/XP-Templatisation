@@ -1,0 +1,19 @@
+﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
+---
+File: |
+  C:\project\Neptune\Neptune\Neptune.Feature\serialization\Renderings\Neptune.yml
+ID: "c5f917b4-2013-4eeb-8d73-e12d17685d5a"
+Parent: "da61ad50-8fdb-4252-a68f-b4470b1c9fe8"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Feature/Neptune
+Signature: 1OxqwVElRbvwm2qzFncnXvPMkx6Qz4hp2Wb7jisGQqU=
+Modified: 637999539120211095
+---
+File: |
+  C:\project\Neptune\Neptune\Neptune.Feature\serialization\Renderings\Neptune\Title.yml
+ID: "3930b51b-f709-478f-bd95-c721e5734fa4"
+Parent: "c5f917b4-2013-4eeb-8d73-e12d17685d5a"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/Neptune/Title
+Signature: 5QuHJLNjPJPgc0fzntgaY4A3MRoHONasD5l+y3gyCQU=
+Modified: 637999539120474138
