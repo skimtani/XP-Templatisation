@@ -40,7 +40,10 @@ function Create-NuSpecFile([string] $Path, [string] $Name, [string] $Version) {
     $xmlWriter.WriteElementString("version", $Version);
     $xmlWriter.WriteElementString("authors", "Horizontal Integration");
     $xmlWriter.WriteElementString("description", "Package that contains the $Name web project files.");
-
+    $xmlWriter.WriteStartElement("repository")
+    $xmlWriter.WriteAttributeString("type", "git")
+    $xmlWriter.WriteAttributeString("url", "https://github.com/skimtani/XP-Templatisation.git")
+    $xmlWriter.WriteEndElement();
     #close the metadata and package nodes
     $xmlWriter.WriteEndElement();
     $xmlWriter.WriteEndElement();
