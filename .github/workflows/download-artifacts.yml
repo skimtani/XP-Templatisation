@@ -15,9 +15,8 @@ jobs:
   download-job:
     name: Download Artifacts
     runs-on: windows-latest
-    # outputs:
-    #   Version-number: ${{ $}}
-    #   build-and-verify: ${{ steps.set-output-defaults.outputs.build-and-verify }}
+    outputs:
+      Version-number: ${{ steps.download-latest-artifacts.outputs.Version-number }}
     steps:
     - uses: actions/checkout@v3
     - name: Download Latest Build Artifacts
