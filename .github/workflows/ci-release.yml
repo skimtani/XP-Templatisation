@@ -18,7 +18,7 @@ jobs:
     needs: GetArtifacts
     steps:
     - uses: actions/checkout@v3
-    - run: echo ${{ needs.GetArtifacts.outputs.Version-number }}
+    - run: echo ${{ needs.GetArtifacts.outputs.version-number }}
       shell: pwsh
   # DEV-CM:
   #   uses: ./.github/workflows/ci-release-template-cm.yml

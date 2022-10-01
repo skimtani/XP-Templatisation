@@ -6,6 +6,10 @@ on:
       run_number:
         required: true
         type: string
+    outputs:
+      version_number:
+        description: "Version number reteived from"
+        value: ${{ jobs.download-job.outputs.Version-number }}
 
 # permissions:
 #       id-token: write
