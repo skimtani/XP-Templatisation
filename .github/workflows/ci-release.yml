@@ -13,18 +13,18 @@ jobs:
     uses: ./.github/workflows/download-artifacts.yml
     with:
       run_number: ${{ github.event.inputs.run_number }}
-  MySecondJob:
-    runs-on: windows-latest
-    needs: GetArtifacts
-    steps:
-    - uses: actions/checkout@v3
-    - run: echo ${{ needs.GetArtifacts.outputs.version_number }}
-      shell: pwsh
-  # DEV-CM:
-  #   uses: ./.github/workflows/ci-release-template-cm.yml
+  # MySecondJob:
+  #   runs-on: windows-latest
   #   needs: GetArtifacts
-  #   with:
-  #     version_number: ${{ steps.}}
+  #   steps:
+  #   - uses: actions/checkout@v3
+  #   - run: echo ${{ needs.GetArtifacts.outputs.version_number }}
+  #     shell: pwsh
+  DEV-CM:
+    uses: ./.github/workflows/ci-release-template-cm.yml
+    needs: GetArtifacts
+    with:
+      run_number: ${{ needs.GetArtifacts.outputs.version_number }}
   #   with:
   #     environment: DEV-CM
   # DEV-CD:

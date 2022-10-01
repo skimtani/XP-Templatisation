@@ -7,7 +7,7 @@ on:
         required: false
         type: string
       run_number:
-        required: false
+        required: true
         type: string
 
 # permissions:
@@ -18,9 +18,11 @@ jobs:
   cm-job:
     name: CM Deployment
     runs-on: windows-latest
-    environment: ${{ inputs.environment }}
+    # environment: ${{ inputs.environment }}
     steps:
     - uses: actions/checkout@v3
+    - run: echo ${{ inputs.run_number }}
+      shell: pwsh
     # - name: OIDC Login to Azure Public Cloud with AzPowershell (enableAzPSSession true)
     #   uses: azure/login@v1
     #   with:
