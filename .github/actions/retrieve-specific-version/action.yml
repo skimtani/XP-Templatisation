@@ -18,7 +18,7 @@ runs:
       with:
         github_token: ${{ github.token }}
         workflow: ci-build-dev.yml
-        workflow_conclusion: success
+        # workflow_conclusion: success
         branch: main
         name: build.txt
         path: ${{ github.workspace }}
