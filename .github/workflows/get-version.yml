@@ -19,14 +19,14 @@ jobs:
       Version-number: ${{ steps.retrieve-version.outputs.Version-number }}
     steps:
     - uses: actions/checkout@v3
-    - name: Download Latest Build Artifacts
+    - name: Download
       id: retrieve-version
       uses: ./.github/actions/retrieve-latest-version/
       with:
         run_number: ${{ inputs.run_number }}
       if: ${{ inputs.run_number == 'latest' }}
     - name: Download Specific Build Artifacts
-      id: retrieve-version
+      # id: retrieve-version
       uses: ./.github/actions/retrieve-specific-version/
       with:
         run_number: ${{ inputs.run_number }}
