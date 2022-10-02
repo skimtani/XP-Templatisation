@@ -18,7 +18,7 @@ runs:
       with:
         github_token: ${{ github.token }}
         workflow: ci-build-dev.yml
-        workflow_conclusion: ""  #Only pick the last successful run.
+        workflow_conclusion: success  #Only pick the last successful run.Will ignore latest failed runs.  
         name: build.txt
         path: ${{ github.workspace }}
         if_no_artifact_found: fail

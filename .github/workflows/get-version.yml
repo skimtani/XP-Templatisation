@@ -16,18 +16,59 @@ jobs:
     name: Retrieve Version
     runs-on: windows-latest
     outputs:
-      Version-number: ${{ steps.retrieve-version.outputs.Version-number }}
+      Version-number: ${{ steps.retrieve-version.outputs.NugetVersion }}
     steps:
     - uses: actions/checkout@v3
-    - name: Download
-      id: retrieve-version
-      uses: ./.github/actions/retrieve-latest-version/
+    - name: Download artifact
+      id: download-latest-version
+      uses: dawidd6/action-download-artifact@v2
       with:
-        run_number: ${{ inputs.run_number }}
+        github_token: ${{ github.token }}
+        workflow: ci-build-dev.yml
+        # workflow_conclusion: success  #Only pick the last successful run.Will ignore latest failed runs.  
+        name: build.txt
+        path: ${{ github.workspace }}
+        if_no_artifact_found: fail
       if: ${{ inputs.run_number == 'latest' }}
-    - name: Download Specific Build Artifacts
-      # id: retrieve-version
-      uses: ./.github/actions/retrieve-specific-version/
+    - name: Download artifact
+      id: download-specific-version
+      uses: dawidd6/action-download-artifact@v2
       with:
+        github_token: ${{ github.token }}
+        workflow: ci-build-dev.yml
+        # workflow_conclusion: success
+        branch: main
+        name: build.txt
+        path: ${{ github.workspace }}
         run_number: ${{ inputs.run_number }}
+        if_no_artifact_found: fail
       if: ${{ inputs.run_number != 'latest' }}
+    - name: List
+      shell: pwsh
+      run: ls ${{ github.workspace }}
+    - name: BUILD version
+      shell: pwsh
+      run: Get-Content -Path build.txt
+    - name: Setting up the Nuget Version
+      id: retrieve-version
+      shell: pwsh
+      run: |
+        $buildnumber = Get-Content -Path build.txt
+        echo $buildnumber
+        echo "::set-output name=NugetVersion::$buildnumber"
+    - name: Nuget version
+      shell: pwsh
+      run: echo ${{ steps.retrieve-version.outputs.NugetVersion}}
+
+    # - name: Download
+    #   id: retrieve-version
+    #   uses: ./.github/actions/retrieve-latest-version/
+    #   with:
+    #     run_number: ${{ inputs.run_number }}
+    #   if: ${{ inputs.run_number == 'latest' }}
+    # - name: Download Specific Build Artifacts
+    #   # id: retrieve-version
+    #   uses: ./.github/actions/retrieve-specific-version/
+    #   with:
+    #     run_number: ${{ inputs.run_number }}
+    #   if: ${{ inputs.run_number != 'latest' }}
