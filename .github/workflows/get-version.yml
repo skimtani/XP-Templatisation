@@ -25,7 +25,7 @@ jobs:
       with:
         github_token: ${{ github.token }}
         workflow: ci-build-dev.yml
-        # workflow_conclusion: success  #Only pick the last successful run.Will ignore latest failed runs.  
+        workflow_conclusion: success  #Only pick the last successful run.Will ignore latest failed runs.  
         name: build.txt
         path: ${{ github.workspace }}
         if_no_artifact_found: fail
@@ -43,12 +43,6 @@ jobs:
         run_number: ${{ inputs.run_number }}
         if_no_artifact_found: fail
       if: ${{ inputs.run_number != 'latest' }}
-    - name: List
-      shell: pwsh
-      run: ls ${{ github.workspace }}
-    - name: BUILD version
-      shell: pwsh
-      run: Get-Content -Path build.txt
     - name: Setting up the Nuget Version
       id: retrieve-version
       shell: pwsh
@@ -56,9 +50,6 @@ jobs:
         $buildnumber = Get-Content -Path build.txt
         echo $buildnumber
         echo "::set-output name=NugetVersion::$buildnumber"
-    - name: Nuget version
-      shell: pwsh
-      run: echo ${{ steps.retrieve-version.outputs.NugetVersion}}
 
     # - name: Download
     #   id: retrieve-version

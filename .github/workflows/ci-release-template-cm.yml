@@ -27,9 +27,7 @@ jobs:
     environment: ${{ inputs.environment }}
     steps:
     - uses: actions/checkout@v3
-    - run: echo ${{ inputs.nuget_version }}
-      shell: pwsh
-    - name: Download
+    - name: Download Artifacts
       # id: retrieve-version
       uses: ./.github/actions/Download-Artifacts/
       with:
