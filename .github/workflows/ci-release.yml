@@ -29,5 +29,5 @@ jobs:
       nuget_version: ${{ needs.GetArtifacts.outputs.version_number }}
       SCSPackageName: ${{ github.event.inputs.SCSPackageName }}
       PackageName: ${{ github.event.inputs.PackageName}}
-    with:
       environment: DEV-CM
+      
