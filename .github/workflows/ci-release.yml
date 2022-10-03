@@ -29,10 +29,5 @@ jobs:
       nuget_version: ${{ needs.GetArtifacts.outputs.version_number }}
       SCSPackageName: ${{ github.event.inputs.SCSPackageName }}
       PackageName: ${{ github.event.inputs.PackageName}}
-  #   with:
-  #     environment: DEV-CM
-  # DEV-CD:
-  #   uses: ./.github/workflows/ci-release-template-cd.yml
-  #   needs: GetArtifacts
-  #   with:
-  #     environment: DEV-CD
+    with:
+      environment: DEV-CM

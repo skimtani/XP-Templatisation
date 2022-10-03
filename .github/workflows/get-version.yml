@@ -19,7 +19,7 @@ jobs:
       Version-number: ${{ steps.retrieve-version.outputs.NugetVersion }}
     steps:
     - uses: actions/checkout@v3
-    - name: Download artifact
+    - name: Retrieve Latest Version
       id: download-latest-version
       uses: dawidd6/action-download-artifact@v2
       with:
@@ -30,7 +30,7 @@ jobs:
         path: ${{ github.workspace }}
         if_no_artifact_found: fail
       if: ${{ inputs.run_number == 'latest' }}
-    - name: Download artifact
+    - name: Retrieve Specific Version
       id: download-specific-version
       uses: dawidd6/action-download-artifact@v2
       with:

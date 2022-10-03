@@ -24,7 +24,7 @@ jobs:
   cm-job:
     name: CM Deployment
     runs-on: windows-latest
-    # environment: ${{ inputs.environment }}
+    environment: ${{ inputs.environment }}
     steps:
     - uses: actions/checkout@v3
     - run: echo ${{ inputs.nuget_version }}
