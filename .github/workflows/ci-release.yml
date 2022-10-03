@@ -11,7 +11,7 @@ on:
         description: 'Name of the serialisation Item Package'
         required: true
         default: 'NeptuneSerialization.itempackage'
-      PackageName: Neptune.web
+      PackageName:
         description: 'Name of the Web Package'
         required: true
         default: 'Neptune.web'
