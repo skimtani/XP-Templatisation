@@ -30,7 +30,7 @@ jobs:
       SCSPackageName: ${{ github.event.inputs.SCSPackageName }}
       PackageName: ${{ github.event.inputs.PackageName}}
       environment: DEV-CM
-    DEV-CD:
+  DEV-CD:
     uses: ./.github/workflows/ci-release-template-cm.yml
     needs: GetArtifacts
     with:
