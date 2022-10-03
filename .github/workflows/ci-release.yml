@@ -7,6 +7,15 @@ on:
         description: 'Package Version'
         required: true
         default: 'latest'
+      SCSPackageName: 
+        description: 'Name of the serialisation Item Package'
+        required: true
+        default: 'NeptuneSerialization.itempackage'
+      PackageName: Neptune.web
+        description: 'Name of the Web Package'
+        required: true
+        default: 'Neptune.web'
+
 
 jobs:
   GetArtifacts:
@@ -17,7 +26,9 @@ jobs:
     uses: ./.github/workflows/ci-release-template-cm.yml
     needs: GetArtifacts
     with:
-      run_number: ${{ needs.GetArtifacts.outputs.version_number }}
+      nuget_version: ${{ needs.GetArtifacts.outputs.version_number }}
+      SCSPackageName: ${{ github.event.inputs.SCSPackageName }}
+      PackageName: ${{ github.event.inputs.PackageName}}
   #   with:
   #     environment: DEV-CM
   # DEV-CD:

@@ -6,7 +6,13 @@ on:
       environment:
         required: false
         type: string
-      run_number:
+      SCSPackageName:
+        required: true
+        type: string
+      nuget_version:
+        required: true
+        type: string
+      PackageName:
         required: true
         type: string
 
@@ -21,8 +27,15 @@ jobs:
     # environment: ${{ inputs.environment }}
     steps:
     - uses: actions/checkout@v3
-    - run: echo ${{ inputs.run_number }}
+    - run: echo ${{ inputs.nuget_version }}
       shell: pwsh
+    - name: Download
+      # id: retrieve-version
+      uses: ./.github/actions/Download-Artifacts/
+      with:
+        nuget_version: ${{ inputs.nuget_version }}
+        SCSPackageName: ${{ inputs.SCSPackageName }}
+        PackageName: ${{ inputs.PackageName }}
     # - name: OIDC Login to Azure Public Cloud with AzPowershell (enableAzPSSession true)
     #   uses: azure/login@v1
     #   with:
