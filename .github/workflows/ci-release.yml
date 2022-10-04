@@ -30,7 +30,7 @@ jobs:
       SCSPackageName: ${{ github.event.inputs.SCSPackageName }}
       PackageName: ${{ github.event.inputs.PackageName}}
       environment: DEV-CM
-      webapp-name: "hello-neptune-cd"
+      webapp-name: "hello-neptune-cm"
       resource-group-name: "neptune"
       cm-url: "https://hello-neptune-cm.azurewebsites.net"
       identity-url: ""
