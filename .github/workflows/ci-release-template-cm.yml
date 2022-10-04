@@ -55,7 +55,7 @@ jobs:
     - name: 'Stop CM WebAPP'
       uses: azure/powershell@v1
       with:
-        inlineScript: Stop-AzWebApp -ResourceGroupName ${{ inputs.resource-group-name }} -Name {{ inputs.webapp-name }}
+        inlineScript: Stop-AzWebApp -ResourceGroupName ${{ inputs.resource-group-name }} -Name ${{ inputs.webapp-name }}
         azPSVersion: "latest"
     - uses: azure/webapps-deploy@v2
       name: Deploy Web Package to Web App
