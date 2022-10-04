@@ -24,7 +24,7 @@ runs:
         $build_number = ${{ inputs.nuget_version }} -replace "0.0.",""
         echo "::set-output name=build_number::$build_number"
     - name: Download SCS Package from build artifact
-      id: download-artifact
+      id: download-artifact-scs
       uses: dawidd6/action-download-artifact@v2
       with:
         github_token: ${{ github.token }}
@@ -35,7 +35,7 @@ runs:
         path: ${{ github.workspace }}
         if_no_artifact_found: fail
     - name: Download sitecore.json from build artifact
-      id: download-artifact
+      id: download-artifact-sitecorejson
       uses: dawidd6/action-download-artifact@v2
       with:
         github_token: ${{ github.token }}
