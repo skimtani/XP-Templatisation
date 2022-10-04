@@ -15,6 +15,13 @@ on:
       PackageName:
         required: true
         type: string
+      webapp-name:
+        required: true
+        type: string
+      resource-group-name:
+        required: true
+        type: string
+      
 
 # permissions:
 #       id-token: write
@@ -41,26 +48,20 @@ jobs:
     #     tenant-id: "4c31935f-277d-4f84-bc78-b2d637b109d9"
     #     subscription-id: "7fb1a0c1-ea2c-4d6e-aab1-a7e96e350865"
     #     enable-AzPSSession: true
-    # - uses: Azure/login@v1
-    #   with:
-    #     creds: '{"clientId":"3f816198-befe-4e29-a575-37837f90bf60","clientSecret":"HG68Q~qYkDPzYE40W9GXnGoqu_qErZsCLqY.cbbk","subscriptionId":"7fb1a0c1-ea2c-4d6e-aab1-a7e96e350865","tenantId":"4c31935f-277d-4f84-bc78-b2d637b109d9"}'
-    #     enable-AzPSSession: true
+    - uses: Azure/login@v1
+      with:
+        creds: '{"clientId":"3f816198-befe-4e29-a575-37837f90bf60","clientSecret":"HG68Q~qYkDPzYE40W9GXnGoqu_qErZsCLqY.cbbk","subscriptionId":"7fb1a0c1-ea2c-4d6e-aab1-a7e96e350865","tenantId":"4c31935f-277d-4f84-bc78-b2d637b109d9"}'
+        enable-AzPSSession: true
     # - name: 'Stop CM WebAPP'
     #   uses: azure/powershell@v1
     #   with:
-    #     inlineScript: Stop-AzWebApp -ResourceGroupName "XPscaled-10.1" -Name "xpscaled1010-cm"
+    #     inlineScript: Stop-AzWebApp -ResourceGroupName ${{ inputs.resource-group-name }} -Name {{ inputs.webapp-name }}
     #     azPSVersion: "latest"
-    # - name: Setting up the Nuget Version
-    #   id: versionsetuptodeploy
-    #   shell: pwsh
-    #   run: |
-    #     $buildnumber = Get-Content -Path build.txt
-    #     echo $buildnumber
-    #     echo "::set-output name=NugetVersion::$buildnumber"
     # - uses: azure/webapps-deploy@v2
+    #   name: Deploy Web Package to Web App
     #   with:
-    #       app-name: xpscaled1010-cm # Replace with your app name
+    #       app-name: ${{ inputs.webapp-name }} # Replace with your app name
     #       publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE  }} # Define secret variable in repository settings as per action documentation
-    #       package: '${{ github.workspace }}\Ucare.web.${{ steps.versionsetuptodeploy.outputs.NugetVersion}}'
+    #       package: '${{ github.workspace }}\${{ inputs.PackageName }}.${{ inputs.nuget_version }}'
     
     
