@@ -32,6 +32,10 @@ jobs:
       environment: DEV-CM
       webapp-name: "hello-neptune-cd"
       resource-group-name: "neptune"
+      cm-url: "https://hello-neptune-cm.azurewebsites.net"
+      identity-url: ""
+      sitecore-clientID: ""
+      sitecore-clientSecret: ""
   # DEV-CD:
   #   uses: ./.github/workflows/ci-release-template-cm.yml
   #   needs: GetArtifacts

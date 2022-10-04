@@ -23,7 +23,7 @@ runs:
       run: |
         $build_number = ${{ inputs.nuget_version }} -replace "0.0.",""
         echo "::set-output name=build_number::$build_number"
-    - name: Download artifact
+    - name: Download SCS Package from build artifact
       id: download-artifact
       uses: dawidd6/action-download-artifact@v2
       with:
@@ -34,6 +34,16 @@ runs:
         run_number: ${{ steps.getbuildversion.outputs.build_number}}
         path: ${{ github.workspace }}
         if_no_artifact_found: fail
+    - name: Download sitecore.json from build artifact
+      id: download-artifact
+      uses: dawidd6/action-download-artifact@v2
+      with:
+        github_token: ${{ github.token }}
+        workflow: ci-build-dev.yml
+        workflow_conclusion: success  #Only pick the last successful run.Will ignore latest failed runs.  
+        name: sitecore.json
+        run_number: ${{ steps.getbuildversion.outputs.build_number}}
+        path: ${{ github.workspace }}
     - name: Add private GitHub registry to NuGet
       shell: pwsh
       run: dotnet nuget add source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json --name github --username ${{ github.repository_owner }} --password ${{ github.token }}

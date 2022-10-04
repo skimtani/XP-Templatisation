@@ -65,3 +65,8 @@ runs:
       with:
         name: ${{ inputs.SCSPackageName }}.itempackage
         path: ${{ github.workspace }}\${{ inputs.SCSPackageName }}.itempackage
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: sitecore.json
+        path: ${{ github.workspace }}\sitecore.json
