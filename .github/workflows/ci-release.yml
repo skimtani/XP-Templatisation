@@ -30,7 +30,7 @@ jobs:
       SCSPackageName: ${{ github.event.inputs.SCSPackageName }}
       PackageName: ${{ github.event.inputs.PackageName}}
       environment: DEV-CM
-      webapp-name: "hello-neptune-cm"
+      webapp-name: "hello-neptune-cd"
       resource-group-name: "neptune"
   # DEV-CD:
   #   uses: ./.github/workflows/ci-release-template-cm.yml
