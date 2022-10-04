@@ -64,17 +64,17 @@ jobs:
       with:
         creds: '{"clientId":"3f816198-befe-4e29-a575-37837f90bf60","clientSecret":"HG68Q~qYkDPzYE40W9GXnGoqu_qErZsCLqY.cbbk","subscriptionId":"7fb1a0c1-ea2c-4d6e-aab1-a7e96e350865","tenantId":"4c31935f-277d-4f84-bc78-b2d637b109d9"}'
         enable-AzPSSession: true
-    - name: 'Stop CM WebAPP'
-      uses: azure/powershell@v1
-      with:
-        inlineScript: Stop-AzWebApp -ResourceGroupName ${{ inputs.resource-group-name }} -Name ${{ inputs.webapp-name }}
-        azPSVersion: "latest"
-    - uses: azure/webapps-deploy@v2
-      name: Deploy Web Package to Web App
-      with:
-          app-name: ${{ inputs.webapp-name }} # Replace with your app name
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE  }} # Define secret variable in repository settings as per action documentation
-          package: '${{ github.workspace }}\${{ inputs.PackageName }}.${{ inputs.nuget_version }}'
+    # - name: 'Stop CM WebAPP'
+    #   uses: azure/powershell@v1
+    #   with:
+    #     inlineScript: Stop-AzWebApp -ResourceGroupName ${{ inputs.resource-group-name }} -Name ${{ inputs.webapp-name }}
+    #     azPSVersion: "latest"
+    # - uses: azure/webapps-deploy@v2
+    #   name: Deploy Web Package to Web App
+    #   with:
+    #       app-name: ${{ inputs.webapp-name }} # Replace with your app name
+    #       publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE  }} # Define secret variable in repository settings as per action documentation
+    #       package: '${{ github.workspace }}\${{ inputs.PackageName }}.${{ inputs.nuget_version }}'
     # - uses: cschleiden/replace-tokens@v1
     #   with:
     #     tokenPrefix: '__'
@@ -83,41 +83,41 @@ jobs:
     #   env:
     #     CDN: https://somecdn.com/...
 
-    - name: 'Start CM WebAPP'
-      uses: azure/powershell@v1
-      with:
-        inlineScript: Start-AzWebApp -ResourceGroupName ${{ inputs.resource-group-name }} -Name ${{ inputs.webapp-name }}
-        azPSVersion: "latest"
-    # - name: 'Perform Health Check of CM'
-    #   working-directory: ${{ github.workspace }}\deploy\Sitecore.Deployment\build\scripts
-    #   run: |
-    #     .\healthCheck.ps1 -http_RequestUrl '${{ inputs.cm-url }}/sitecore/service/keepalive.aspx' -http_RequestRetries 100 -http_RequestTimeout 1000 -http_RetrySeconds 30
-    #   shell: pwsh
-    # - name: Install Item Package
-    #   shell: pwsh
-    #   working-directory: ${{ github.workspace }}
-    #   run: |
+    # - name: 'Start CM WebAPP'
+    #   uses: azure/powershell@v1
+    #   with:
+    #     inlineScript: Start-AzWebApp -ResourceGroupName ${{ inputs.resource-group-name }} -Name ${{ inputs.webapp-name }}
+    #     azPSVersion: "latest"
+    - name: 'Perform Health Check of CM'
+      working-directory: ${{ github.workspace }}\deploy\Sitecore.Deployment\build\scripts
+      run: |
+        .\healthCheck.ps1 -http_RequestUrl '${{ inputs.cm-url }}/sitecore/service/keepalive.aspx' -http_RequestRetries 100 -http_RequestTimeout 1000 -http_RetrySeconds 30
+      shell: pwsh
+    - name: Install Item Package
+      shell: pwsh
+      working-directory: ${{ github.workspace }}
+      run: |
 
-    #     #Install sitecore.cli on agent
-    #     dotnet new tool-manifest
-    #     dotnet nuget add source -n Sitecore https://sitecore.myget.org/F/sc-packages/api/v3/index.json
-    #     dotnet tool install Sitecore.CLI --version 4.2.1
+        #Install sitecore.cli on agent
+        dotnet new tool-manifest
+        dotnet nuget add source -n Sitecore https://sitecore.myget.org/F/sc-packages/api/v3/index.json
+        dotnet tool install Sitecore.CLI --version 4.2.1
 
-    #     dotnet sitecore --version
+        dotnet sitecore --version
 
-    #     #Sitecore login
-    #     dotnet sitecore login --client-id ${{ inputs.sitecore-clientID }} --client-secret ${{ inputs.sitecore-clientSecret }} --cm ${{ inputs.cm-url }} --authority ${{ inputs.identity-url }} --allow-write true --client-credentials true
+        #Sitecore login
+        dotnet sitecore login --client-id ${{ inputs.sitecore-clientID }} --client-secret ${{ inputs.sitecore-clientSecret }} --cm ${{ inputs.cm-url }} --authority ${{ inputs.identity-url }} --allow-write true --client-credentials true
 
-    #     #Install Sitecore Serialization Packages (.itempackages)
-    #     dotnet sitecore ser pkg install -f ${{ inputs.SCSPackageName }} --verbose
+        #Install Sitecore Serialization Packages (.itempackages)
+        dotnet sitecore ser pkg install -f ${{ inputs.SCSPackageName }} --verbose
 
-    #     #Push Role Serialization Packages to Sitecore instance
-    #     #Write-Host "Initiating Role Serialization sync"
-    #     #dotnet sitecore ser push
-    # - name: 'Perform Health Check of CM'
-    #   working-directory: ${{ github.workspace }}\deploy\Sitecore.Deployment\build\scripts
-    #   run: |
-    #     .\healthCheck.ps1 -http_RequestUrl '${{ inputs.cm-url }}/sitecore/service/keepalive.aspx' -http_RequestRetries 100 -http_RequestTimeout 1000 -http_RetrySeconds 30
-    #   shell: pwsh
+        #Push Role Serialization Packages to Sitecore instance
+        #Write-Host "Initiating Role Serialization sync"
+        #dotnet sitecore ser push
+    - name: 'Perform Health Check of CM'
+      working-directory: ${{ github.workspace }}\deploy\Sitecore.Deployment\build\scripts
+      run: |
+        .\healthCheck.ps1 -http_RequestUrl '${{ inputs.cm-url }}/sitecore/service/keepalive.aspx' -http_RequestRetries 100 -http_RequestTimeout 1000 -http_RetrySeconds 30
+      shell: pwsh
 
     
