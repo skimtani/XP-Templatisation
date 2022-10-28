@@ -41,9 +41,9 @@ on:
         type: string
       
 
-# permissions:
-#       id-token: write
-#       contents: read
+permissions:
+      id-token: write
+      contents: read
 
 jobs:
   cm-job:
