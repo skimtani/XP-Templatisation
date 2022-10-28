@@ -40,7 +40,7 @@ jobs:
       ClientName: Neptune
   DEV-CD:
     uses: ./.github/workflows/ci-release-template-cd.yml
-    needs: GetArtifacts
+    needs: DEV-CM
     with:
       nuget_version: ${{ needs.GetArtifacts.outputs.version_number }}
       PackageName: ${{ github.event.inputs.PackageName}}
