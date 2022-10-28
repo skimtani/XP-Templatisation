@@ -10,7 +10,8 @@ env:
   PackageName: Neptune.web
   OutputDirectory: ${{ github.workspace }}\deploy\artifacts
   SCSPackageName: NeptuneSerialization
-
+  Sitecore_CM_Url: test-neptune-cm.azurewebsites.net
+  Sitecore_CD_Url: test-neptune-cd.azurewebsites.net
 
 jobs:
   devbuild:
@@ -29,7 +30,8 @@ jobs:
         Version_Full: ${{ env.Version_Full }}
         OutputDirectory: ${{ env.OutputDirectory }}
         SCSPackageName: ${{ env.SCSPackageName }}
-        
+        Sitecore_CM_Url: ${{ env.Sitecore_CM_Url }}
+        Sitecore_CD_Url: ${{ env.Sitecore_CD_Url }}
 
 
 

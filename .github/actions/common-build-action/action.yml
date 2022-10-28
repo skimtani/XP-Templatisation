@@ -17,6 +17,14 @@ inputs:
     description: 'Name of the SCS Package'
     required: true
     default: ''
+  Sitecore_CM_Url:
+    description: ''
+    required: true
+    default: ''
+  Sitecore_CD_Url:
+    description: ''
+    required: true
+    default: ''
 runs:
   using: "composite"
   steps:
@@ -33,6 +41,17 @@ runs:
     - name: list files
       run: dir ${{ github.workspace }}\deploy\workdir
       shell: pwsh
+
+    - uses: cschleiden/replace-tokens@v1
+      with:
+        tokenPrefix: '__'
+        tokenSuffix: '__'
+        files: '["**/*.yml"]'
+      env:
+       Sitecore.CM.Url :  ${{ inputs.Sitecore_CM_Url }}
+       Sitecore.CD.Url :  ${{ inputs.Sitecore_CD_Url }}
+       
+
 
     - name: Create SCS Package
       working-directory: ${{ github.workspace }}
