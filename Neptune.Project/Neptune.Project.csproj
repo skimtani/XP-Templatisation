@@ -191,13 +191,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.config" />
+    <Content Include="web.config-Global.xdt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <None Include="web.config-Global.xdt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Neptune.Environment\Neptune.Environment.csproj">
