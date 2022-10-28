@@ -9,7 +9,7 @@ param(
 Write-Host "ResourceGroupName: $resourceGroupName - WebAppName: $webAppName" 
 
 $commandBody = @{
-    command = "powershell -command `"Import-Module D:\home\Scripts\Update-XmlDocTransform.psm1; Update-XmlDocTransform -xml D:\home\site\wwwroot\web.config -xdt D:\home\site\wwwroot\web.cd.config.xdt`"" 
+    command = "powershell -command `"Import-Module D:\home\Scripts\Update-XmlDocTransform.psm1; Update-XmlDocTransform -xml D:\home\site\wwwroot\web.config -xdt D:\home\site\wwwroot\web.config-Global.xdt`"" 
 }
 
 function Get-AzureRmWebAppPublishingCredentials($resourceGroupName, $webAppName, $slotName = $null){
