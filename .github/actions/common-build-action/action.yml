@@ -56,7 +56,7 @@ runs:
       shell: pwsh
     
     - name: list files
-      run: Get-Content '${{ github.workspace }}Neptune.Project/serialization/Content/content/Neptune Tenant Folder/Neptune Tenant/Neptune/Settings/Site Grouping/Neptune-Preview.yml'
+      run: Get-Content '${{ github.workspace }}/Neptune.Project/serialization/Content/content/Neptune Tenant Folder/Neptune Tenant/Neptune/Settings/Site Grouping/Neptune-Preview.yml'
       shell: pwsh
        
     - uses: actions/setup-dotnet@v3
