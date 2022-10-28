@@ -32,7 +32,7 @@ jobs:
       environment: DEV-CM
       webapp-name: "test-neptune-cm"
       webapp-type: "cm"
-      resource-group-name: "neptune"
+      resource-group-name: "Neptune-XM-Mansi"
       cm-url: "https://test-neptune-cm.azurewebsites.net/"
       identity-url: "https://test-neptune-si.azurewebsites.net/"
       sitecore-clientID: "SitecoreCLIServer"
@@ -40,14 +40,14 @@ jobs:
       ClientName: Neptune
   DEV-CD:
     uses: ./.github/workflows/ci-release-template-cd.yml
-    needs: DEV-CM
+    needs: GetArtifacts
     with:
       nuget_version: ${{ needs.GetArtifacts.outputs.version_number }}
       PackageName: ${{ github.event.inputs.PackageName}}
       environment: DEV-CD
       webapp-name: "test-neptune-cd"
       webapp-type: "cd"
-      resource-group-name: "neptune"
+      resource-group-name: "Neptune-XM-Mansi"
       cm-url: "https://test-neptune-cm.azurewebsites.net/"
       cd-url: "https://test-neptune-cd.azurewebsites.net/"
       identity-url: "https://test-neptune-si.azurewebsites.net/"
