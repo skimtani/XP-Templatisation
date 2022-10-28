@@ -2,8 +2,8 @@
   "endpoints": {
     "default": {
       "allowWrite": true,
-      "host": "",
-      "authority": "",
+      "host": "https://test-neptune-cm.azurewebsites.net/",
+      "authority": "https://test-neptune-si.azurewebsites.net/",
       "accessToken": "",
       "refreshToken": "",
       "variables": {},
