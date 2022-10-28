@@ -93,7 +93,7 @@ jobs:
       shell: pwsh
       working-directory: ${{ github.workspace }}
       run: |
-        $webAppType = ${{ inputs.webapp-name }}
+        $webAppType = ${{ inputs.webapp-type }}
         $resourceGroupName = ${{ inputs.resource-group-name }}
         $webAppName = ${{ inputs.webapp-name }}
 
