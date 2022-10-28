@@ -43,7 +43,6 @@ jobs:
     needs: GetArtifacts
     with:
       nuget_version: ${{ needs.GetArtifacts.outputs.version_number }}
-      SCSPackageName: ${{ github.event.inputs.SCSPackageName }}
       PackageName: ${{ github.event.inputs.PackageName}}
       environment: DEV-CD
       webapp-name: "test-neptune-cd"
