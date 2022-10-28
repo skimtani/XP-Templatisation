@@ -91,11 +91,11 @@ jobs:
           package: '${{ github.workspace }}\${{ inputs.PackageName }}.${{ inputs.nuget_version }}'
 
     - name: xdt transformation
-      working-directory: ${{ github.workspace }}\deploy\Sitecore.Deployment\build\scripts
-      run: |
-        .\XdtTransformation.ps1 -webAppType '${{ inputs.webapp-type }}' -resourceGroupName ${{ inputs.resource-group-name }} -webAppName ${{ inputs.webapp-name }}
-      shell: pwsh
-      
+      uses: azure/powershell@v1
+      with:
+        inlineScript: ${{ github.workspace }}\deploy\Sitecore.Deployment\build\scripts\XdtTransformation.ps1 -webAppType '${{ inputs.webapp-type }}' -resourceGroupName ${{ inputs.resource-group-name }} -webAppName ${{ inputs.webapp-name }}
+        azPSVersion: "latest"
+
     - name: 'Start CD WebAPP'
       uses: azure/powershell@v1
       with:
