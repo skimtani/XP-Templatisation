@@ -54,6 +54,10 @@ runs:
     - name: list files
       run: Get-Content '${{ github.workspace }}/Neptune.Project/serialization/Content/content/Neptune Tenant Folder/Neptune Tenant/Neptune/Settings/Site Grouping/Neptune.yml'
       shell: pwsh
+    
+    - name: list files
+      run: Get-Content '${{ github.workspace }}Neptune.Project/serialization/Content/content/Neptune Tenant Folder/Neptune Tenant/Neptune/Settings/Site Grouping/Neptune-Preview.yml'
+      shell: pwsh
        
     - uses: actions/setup-dotnet@v3
       with:
@@ -65,7 +69,7 @@ runs:
       run: |
         dotnet nuget add source -n Sitecore https://sitecore.myget.org/F/sc-packages/api/v3/index.json
         dotnet tool restore
-        dotnet sitecore ser pkg create -o ${{ inputs.SCSPackageName }}
+        dotnet sitecore ser pkg create -o ${{ inputs.SCSPackageName }} -t -v
 
     - name: Publishing Package Number
       shell: pwsh
