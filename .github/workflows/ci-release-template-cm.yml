@@ -88,10 +88,13 @@ jobs:
     #   with:
     #     inlineScript: Start-AzWebApp -ResourceGroupName ${{ inputs.resource-group-name }} -Name ${{ inputs.webapp-name }}
     #     azPSVersion: "latest"
-    - name: 'Perform Health Check of CM'
-      working-directory: ${{ github.workspace }}\deploy\Sitecore.Deployment\build\scripts
-      run: |
-        .\healthCheck.ps1 -http_RequestUrl '${{ inputs.cm-url }}/sitecore/service/keepalive.aspx' -http_RequestRetries 100 -http_RequestTimeout 1000 -http_RetrySeconds 30
+    # - name: 'Perform Health Check of CM'
+    #   working-directory: ${{ github.workspace }}\deploy\Sitecore.Deployment\build\scripts
+    #   run: |
+    #     .\healthCheck.ps1 -http_RequestUrl '${{ inputs.cm-url }}/sitecore/service/keepalive.aspx' -http_RequestRetries 100 -http_RequestTimeout 1000 -http_RetrySeconds 30
+    #   shell: pwsh
+    - name: list dir
+      run: dir ${{ github.workspace }}
       shell: pwsh
     - name: Install Item Package
       shell: pwsh
@@ -114,10 +117,10 @@ jobs:
         #Push Role Serialization Packages to Sitecore instance
         #Write-Host "Initiating Role Serialization sync"
         #dotnet sitecore ser push
-    - name: 'Perform Health Check of CM'
-      working-directory: ${{ github.workspace }}\deploy\Sitecore.Deployment\build\scripts
-      run: |
-        .\healthCheck.ps1 -http_RequestUrl '${{ inputs.cm-url }}/sitecore/service/keepalive.aspx' -http_RequestRetries 100 -http_RequestTimeout 1000 -http_RetrySeconds 30
-      shell: pwsh
+    # - name: 'Perform Health Check of CM'
+    #   working-directory: ${{ github.workspace }}\deploy\Sitecore.Deployment\build\scripts
+    #   run: |
+    #     .\healthCheck.ps1 -http_RequestUrl '${{ inputs.cm-url }}/sitecore/service/keepalive.aspx' -http_RequestRetries 100 -http_RequestTimeout 1000 -http_RetrySeconds 30
+    #   shell: pwsh
 
     

@@ -51,7 +51,9 @@ runs:
        Sitecore.CM.Url :  ${{ inputs.Sitecore_CM_Url }}
        Sitecore.CD.Url :  ${{ inputs.Sitecore_CD_Url }}
        
-
+    - uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '6.0.x'
 
     - name: Create SCS Package
       working-directory: ${{ github.workspace }}
