@@ -1,0 +1,31 @@
+﻿---
+ID: "1df66b8d-d7d7-4f1f-bc7d-c77c2a6e0fb9"
+Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
+Template: "4f539f2e-9cf9-4453-8e82-3d13ded12ab3"
+Path: /sitecore/content/Neptune Tenant Folder
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220930T102342Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "75bb83cf-f737-4950-9af3-bf17fa92dd71"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220930T102342Z

@@ -1,0 +1,39 @@
+﻿---
+ID: "21c18961-b734-48af-9ddb-778a412bdb31"
+Parent: "e4915dab-6ad6-4e93-90f4-354fcb2d5c35"
+Template: "ad89c1f1-e991-48ef-8659-38ab13aa28f1"
+Path: /sitecore/content/Neptune Tenant Folder/Neptune Tenant/Neptune/Data/Search/Date Filter/Default
+BranchID: "957565a0-bf0d-4f8b-bf2c-4a8f40ec9080"
+SharedFields:
+- ID: "734f9a5a-c02a-4d34-87e8-29c732d8eb67"
+  Hint: Facet
+  Value: "{87A830FB-4E2F-4F76-896B-F20CFA2374DD}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{B2960D81-4DE1-4C3E-A0A7-20F544AD36D7}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220930T102658Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "577a4552-1caa-4bd6-b430-c62394359f7a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220930T102658Z

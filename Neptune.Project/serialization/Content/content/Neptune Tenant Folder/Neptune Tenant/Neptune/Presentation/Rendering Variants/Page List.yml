@@ -1,0 +1,39 @@
+﻿---
+ID: "05a0384b-d96c-4488-ba97-71d7916b4be8"
+Parent: "51fa39e6-ecdb-4061-9a5e-cecff5988ffa"
+Template: "e1a3b30c-77bc-4f6c-a008-d01b3371235d"
+Path: /sitecore/content/Neptune Tenant Folder/Neptune Tenant/Neptune/Presentation/Rendering Variants/Page List
+BranchID: "9ce20276-ee4d-4810-932a-f8e8ba759377"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/list_style_bullets.png
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{C70CBC83-79A2-4C4F-AFAB-7B611CBCA055}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220930T102648Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3e5f16bf-28d8-437e-9a79-4f6fcb3e5794"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220930T102648Z

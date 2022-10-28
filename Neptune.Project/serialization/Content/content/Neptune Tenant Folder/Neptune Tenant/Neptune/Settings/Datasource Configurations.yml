@@ -1,0 +1,31 @@
+﻿---
+ID: "98e5ab90-5f3e-4047-bd7e-998bce70508f"
+Parent: "f31fb19f-6b57-4f35-b15b-f0db8bff83d5"
+Template: "f86fe270-00a4-492f-bfaf-5bf27e40ce13"
+Path: /sitecore/content/Neptune Tenant Folder/Neptune Tenant/Neptune/Settings/Datasource Configurations
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220930T102621Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f6ce03a1-3ee8-428e-86a5-8e3491759417"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220930T102621Z

@@ -1,0 +1,35 @@
+﻿---
+ID: "8adb8cb0-d865-4a34-b07f-cde163225e18"
+Parent: "c28a80ec-2953-47fe-a7a7-e00af1dd4fdc"
+Template: "de3fa58e-ef9d-4544-9f77-dcd1dbb05b64"
+Path: /sitecore/content/Neptune Tenant Folder/Neptune Tenant/Neptune/Data/Search/Radius Filter/Radius Filter
+SharedFields:
+- ID: "ae5d211a-4ff1-4e9e-ba0f-9442b0abca91"
+  Hint: Facet
+  Value: "{D6E3BED7-937A-4FD7-8F31-CEE449D60C43}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220930T102701Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "17cc8455-f01e-49fe-b74a-9bbd7526d12f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220930T102701Z

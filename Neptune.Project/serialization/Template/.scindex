@@ -1,244 +1,253 @@
 ﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
 ---
 File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder.yml
-ID: "cd0a5a7a-c197-45c8-a08e-cbf456af5f4b"
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder.yml
+ID: "cbb438f6-68d5-4868-9310-b44444369afb"
 Parent: "825b30b4-b40b-422e-9920-23a1b6bda89c"
 Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
 Path: /sitecore/templates/Project/Neptune Tenant Folder
-Signature: HnauvjQOpyOXLt5lzDLybwd9vGOvrJmcoz2k6DRRVU4=
-Modified: 637999536073061060
+Signature: Q3qir9RzZXzVGFXwQ3uGTy4SU0eLxUvkIKZ8rQ2U24w=
+Modified: 638019519956314772
 ---
 File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant.yml
-ID: "2b0e3f85-9c35-4314-af25-19171ed7ac16"
-Parent: "cd0a5a7a-c197-45c8-a08e-cbf456af5f4b"
-Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant
-Signature: HnauvjQOpyOXLt5lzDLybwd9vGOvrJmcoz2k6DRRVU4=
-Modified: 637999536073221488
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Home.yml
-ID: "d80e4b73-7720-470a-b713-22edc6b85e76"
-Parent: "2b0e3f85-9c35-4314-af25-19171ed7ac16"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Home
-Signature: kSIqZBKidZJzR8Jy4QV53O91sivKx26xSeF514gSXb4=
-Modified: 637999536073404695
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Page Design Folder.yml
-ID: "afb7920f-370b-495d-8e78-00e883dd195d"
-Parent: "2b0e3f85-9c35-4314-af25-19171ed7ac16"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page Design Folder
-Signature: dmMPpk2KNdca/x1uwqBT2jks+/ajwFBG5hJMt9+oiHE=
-Modified: 637999536073765372
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Page Design.yml
-ID: "b6e35303-0589-43d3-80f3-25a0a7fefe81"
-Parent: "2b0e3f85-9c35-4314-af25-19171ed7ac16"
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Page Design.yml
+ID: "15351b3f-5b18-49d0-83e5-113eaedd671e"
+Parent: "9955f51c-b186-4068-9296-2b1aa7c08a09"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page Design
-Signature: GoWdVSVRUHciT3bLOhckUvpISJ5aoIr0/pufKLoo1yg=
-Modified: 637999536073570872
+Signature: xXzaBpmKQXrPTTsLsDf6meBed33IbKKt3CStZLq/zhI=
+Modified: 638019519956810740
 ---
 File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Page Designs.yml
-ID: "e357440e-88a9-4b35-a27b-47c5e40a2f35"
-Parent: "2b0e3f85-9c35-4314-af25-19171ed7ac16"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page Designs
-Signature: QNn2EuKw8k6kM9oe0vfmmSRskOPgLzJBIBEP7tN1Ai4=
-Modified: 637999536073930393
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Page.yml
-ID: "04fac87a-a713-47a4-a733-a6f8ceb7aed2"
-Parent: "2b0e3f85-9c35-4314-af25-19171ed7ac16"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page
-Signature: MTeKiHzoq1aax2xSKU1M/oJjvKlp5cOL0fAEpPw5NuI=
-Modified: 637999536073404695
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Partial Design Folder.yml
-ID: "924f524e-7cde-48bc-943b-81c0fad6d938"
-Parent: "2b0e3f85-9c35-4314-af25-19171ed7ac16"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Partial Design Folder
-Signature: qmYnUlWjxRyXrvwYC/fU+5xtF46Genwfv38UE8NfMe8=
-Modified: 637999536074244549
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Partial Design.yml
-ID: "9dab3cc0-985a-4b68-bdee-92436726767e"
-Parent: "2b0e3f85-9c35-4314-af25-19171ed7ac16"
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Partial Design.yml
+ID: "13ee31f9-9f3b-403a-a6ff-e4efb74cfe20"
+Parent: "9955f51c-b186-4068-9296-2b1aa7c08a09"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Partial Design
-Signature: jsh1I9Qz6EuUg5oqk+o0ey5BiEFNw/3AzQtu/et8ffU=
-Modified: 637999536074088504
+Signature: ujwmE6u9tMFtMUfSyyQ1qmGW7aiKLS306Plph6Mf7Us=
+Modified: 638019519957196309
 ---
 File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Partial Designs.yml
-ID: "53c2c3ca-8e13-4e65-927d-6089e93b25f7"
-Parent: "2b0e3f85-9c35-4314-af25-19171ed7ac16"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Partial Designs
-Signature: PAiHwuIyF8Db1pBhqikOnUZfg34fZvq1Y2ElDavYTdg=
-Modified: 637999536074399779
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Settings.yml
-ID: "279db205-b5c5-40c2-bc7e-a2e1c51c9869"
-Parent: "2b0e3f85-9c35-4314-af25-19171ed7ac16"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Settings
-Signature: AVTuDLIPwdOpKA6kzcveGF0f1D8OCUjstYQh28PoKuo=
-Modified: 637999536074399779
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Site.yml
-ID: "836834b5-421e-41b8-b456-6124514ebe68"
-Parent: "2b0e3f85-9c35-4314-af25-19171ed7ac16"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Site
-Signature: G2A8yoACjxb+m+KM3a+y/ie+uvOwUSkG2ZorcH9wqhc=
-Modified: 637999536074595216
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Tenant.yml
-ID: "a6c4b6a1-3186-487d-aff5-60f121356233"
-Parent: "2b0e3f85-9c35-4314-af25-19171ed7ac16"
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Tenant.yml
+ID: "41d40b75-0c1e-485f-8ea5-55afeb5a3fe9"
+Parent: "9955f51c-b186-4068-9296-2b1aa7c08a09"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Tenant
-Signature: j1418nEOR79G7BDq8NDiHn4SyIk/VVQViVoycx3o8Fo=
-Modified: 637999536074753547
+Signature: P+JqmxKxCDk3ChecSaRGtLacQ+11zlv4uIzuzXP0uP8=
+Modified: 638019519957821148
 ---
 File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Home\__Standard Values.yml
-ID: "289efbc0-9917-4af8-a3a5-0fb7958d65c7"
-Parent: "d80e4b73-7720-470a-b713-22edc6b85e76"
-Template: "d80e4b73-7720-470a-b713-22edc6b85e76"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Home/__Standard Values
-Signature: Flx7sEMywDBZA9XTlUezLzEqrT4U9vP9gTXPR/H3KpE=
-Modified: 637999536075470152
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Page\Content.yml
-ID: "72438631-2152-4001-b540-1c0bb5c36f9a"
-Parent: "04fac87a-a713-47a4-a733-a6f8ceb7aed2"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page/Content
-Signature: HuW3wZVp2O1B6ruGkR/LZ7chF+m8NFH3fIbaQUT/0aI=
-Modified: 637999536074910741
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Page\__Standard Values.yml
-ID: "4a36d41b-1a7d-421f-833b-5d7a1901186b"
-Parent: "04fac87a-a713-47a4-a733-a6f8ceb7aed2"
-Template: "04fac87a-a713-47a4-a733-a6f8ceb7aed2"
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Page\__Standard Values.yml
+ID: "1ababae9-5041-46ab-80c9-cb69fff92529"
+Parent: "6170867b-4d66-441b-9fe8-a1d6708468e3"
+Template: "6170867b-4d66-441b-9fe8-a1d6708468e3"
 Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page/__Standard Values
-Signature: ONpKpWJacc1O7zVsuqNzUF/He9qneV6eMrU5n6LlUjg=
-Modified: 637999536075482227
+Signature: MDHLF20jy0JCeg6CHQwRgtjEm6mynL1aM50J9S/T1S0=
+Modified: 638019519958456671
 ---
 File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Page Design\__Standard Values.yml
-ID: "76cfbb70-e716-4104-bc04-b3d760f0bb5b"
-Parent: "b6e35303-0589-43d3-80f3-25a0a7fefe81"
-Template: "b6e35303-0589-43d3-80f3-25a0a7fefe81"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page Design/__Standard Values
-Signature: BkK7zi61yMZwzjAWQ1YkQAvbRET7QKPm0meR4vhcgVE=
-Modified: 637999536075646218
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Page Designs\__Standard Values.yml
-ID: "5528e9c6-8ceb-4add-a029-3473953e3da1"
-Parent: "e357440e-88a9-4b35-a27b-47c5e40a2f35"
-Template: "e357440e-88a9-4b35-a27b-47c5e40a2f35"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page Designs/__Standard Values
-Signature: iDux8fpEUUni26KkyCc3j2cWzBSPZ6cHTO++yLwYk70=
-Modified: 637999536075967934
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Page Design Folder\__Standard Values.yml
-ID: "5fbd55ea-5de7-40de-9a9e-5bd99489d2bb"
-Parent: "afb7920f-370b-495d-8e78-00e883dd195d"
-Template: "afb7920f-370b-495d-8e78-00e883dd195d"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page Design Folder/__Standard Values
-Signature: 0YqIZjSpDz5CbMbZ0gKSQygT5nTp0SREgsiD0uBGrj0=
-Modified: 637999536075807620
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Partial Design\__Standard Values.yml
-ID: "afd5e126-ca2a-428d-a819-1b3313498afa"
-Parent: "9dab3cc0-985a-4b68-bdee-92436726767e"
-Template: "9dab3cc0-985a-4b68-bdee-92436726767e"
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Partial Design\__Standard Values.yml
+ID: "e70474d3-f121-4861-b942-7e2de7c47c25"
+Parent: "13ee31f9-9f3b-403a-a6ff-e4efb74cfe20"
+Template: "13ee31f9-9f3b-403a-a6ff-e4efb74cfe20"
 Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Partial Design/__Standard Values
-Signature: +d8/URYFjuz5uDuH0flAI3qfZohusufVEpNC4lK+tZ0=
-Modified: 637999536076280158
+Signature: ZGpLr6uoGarr5gGC9OD82bfB4upYKmSLBfXgS3M1hWA=
+Modified: 638019519958962556
 ---
 File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Partial Design Folder\__Standard Values.yml
-ID: "a19963a6-f577-45f0-9c8e-d94a1ec41645"
-Parent: "924f524e-7cde-48bc-943b-81c0fad6d938"
-Template: "924f524e-7cde-48bc-943b-81c0fad6d938"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Partial Design Folder/__Standard Values
-Signature: C4hrNqpBQlfHYNirWHVI348NaErLpfbl2C8Q+2mpzxc=
-Modified: 637999536076441094
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Settings\__Standard Values.yml
-ID: "e5af6400-507a-48fe-80bd-c839c480bee4"
-Parent: "279db205-b5c5-40c2-bc7e-a2e1c51c9869"
-Template: "279db205-b5c5-40c2-bc7e-a2e1c51c9869"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Settings/__Standard Values
-Signature: ABDbiR6uGMRlI6vdFpUl0AjWVl1yYydmsxX6lIUyM+4=
-Modified: 637999536076750637
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Partial Designs\__Standard Values.yml
-ID: "37dcb31d-c2c1-4c84-9536-26237faf9863"
-Parent: "53c2c3ca-8e13-4e65-927d-6089e93b25f7"
-Template: "53c2c3ca-8e13-4e65-927d-6089e93b25f7"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Partial Designs/__Standard Values
-Signature: LabvtS4M4KSgt68mSl+Mu8gN2EOC+AHQQU64IgcsUMM=
-Modified: 637999536076581382
----
-File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Site\__Standard Values.yml
-ID: "e4556f92-0598-4d0e-9bdf-a3f560b02057"
-Parent: "836834b5-421e-41b8-b456-6124514ebe68"
-Template: "836834b5-421e-41b8-b456-6124514ebe68"
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Site\__Standard Values.yml
+ID: "c120d767-b875-412b-96a1-1163701cc8dc"
+Parent: "42c330af-4c3c-444f-9f20-9f578df029cc"
+Template: "42c330af-4c3c-444f-9f20-9f578df029cc"
 Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Site/__Standard Values
-Signature: 5m4kBRS6V+ywvycFyEcsbCrXnqLdQb1Cz5T+ttNG5XI=
-Modified: 637999536076916749
+Signature: uok04ezBTCQt9A9ZVNcy4vmNUUCsWArn5w1ZJj1JOU4=
+Modified: 638019519959523941
 ---
 File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Tenant\__Standard Values.yml
-ID: "e7b5637a-b02b-4981-9333-cc3ceeca673d"
-Parent: "a6c4b6a1-3186-487d-aff5-60f121356233"
-Template: "a6c4b6a1-3186-487d-aff5-60f121356233"
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Home.yml
+ID: "7a0aa293-cbc0-4d5a-add2-67b30a9ee1c0"
+Parent: "9955f51c-b186-4068-9296-2b1aa7c08a09"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Home
+Signature: rZ2uTnyou04IL71d/19o3F/GVfC/9maM9AoOA/whm2c=
+Modified: 638019519956573778
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Page.yml
+ID: "6170867b-4d66-441b-9fe8-a1d6708468e3"
+Parent: "9955f51c-b186-4068-9296-2b1aa7c08a09"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page
+Signature: YenOm19DbAQGVEDeBWLDHBKfhiu6UaQbtMR+lmDRpFk=
+Modified: 638019519956693910
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Partial Designs.yml
+ID: "72267af6-2747-45b8-901b-1d6b89caf033"
+Parent: "9955f51c-b186-4068-9296-2b1aa7c08a09"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Partial Designs
+Signature: lwpDGqCBMrwg0WxhylrmFg0nP3JOJrnbiGaEmu6RVDw=
+Modified: 638019519957468757
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Home\__Standard Values.yml
+ID: "1e026c74-9630-400a-b74e-1c73b3d5833a"
+Parent: "7a0aa293-cbc0-4d5a-add2-67b30a9ee1c0"
+Template: "7a0aa293-cbc0-4d5a-add2-67b30a9ee1c0"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Home/__Standard Values
+Signature: mdk3+yOgzbqiNksEBfET4EbtOtdXJHtjrpCO91GbClw=
+Modified: 638019519958352788
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Page Design Folder\__Standard Values.yml
+ID: "c4bc9014-8363-40a6-aaff-b37d62517cbb"
+Parent: "a9ff18e9-cbb6-49f5-a553-ee80984ef557"
+Template: "a9ff18e9-cbb6-49f5-a553-ee80984ef557"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page Design Folder/__Standard Values
+Signature: D3bqHCHAgJdH35VS6pi29DLaoeM9Pgu2vV/WfHvCrJA=
+Modified: 638019519958695668
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Partial Designs\__Standard Values.yml
+ID: "9a6b1a89-550f-4204-9a82-8d45afab699d"
+Parent: "72267af6-2747-45b8-901b-1d6b89caf033"
+Template: "72267af6-2747-45b8-901b-1d6b89caf033"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Partial Designs/__Standard Values
+Signature: R+BeiFO1HXf5LHt1lANjbVvHNOkVgG6jCPxkPwPXzW0=
+Modified: 638019519959277360
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Tenant\__Standard Values.yml
+ID: "dda671d1-219e-424a-b005-204d4f26f9d5"
+Parent: "41d40b75-0c1e-485f-8ea5-55afeb5a3fe9"
+Template: "41d40b75-0c1e-485f-8ea5-55afeb5a3fe9"
 Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Tenant/__Standard Values
-Signature: 4LNEl193QG7wx8VkZuHJsvbY6b2XKnwFhAp2RahT7S0=
-Modified: 637999536077089554
+Signature: QNKMf46HaZ2WT/ngFJ1fY1mJAdh5PtAp9EUtX64BAOQ=
+Modified: 638019519959638749
 ---
 File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Page\Content\Title.yml
-ID: "4184d96f-5492-40f5-b845-e15cd31f460f"
-Parent: "72438631-2152-4001-b540-1c0bb5c36f9a"
-Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page/Content/Title
-Signature: 8774A0gWIESSTEPomL9Cb9XpQSDIQcuhR/0YYui/cz0=
-Modified: 637999536075067387
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant.yml
+ID: "9955f51c-b186-4068-9296-2b1aa7c08a09"
+Parent: "cbb438f6-68d5-4868-9310-b44444369afb"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant
+Signature: Q3qir9RzZXzVGFXwQ3uGTy4SU0eLxUvkIKZ8rQ2U24w=
+Modified: 638019519956443596
 ---
 File: |
-  C:\project\Neptune\Neptune\Neptune.Project\serialization\Template\Neptune Tenant Folder\Neptune Tenant\Page\Content\Content.yml
-ID: "1f7501b1-89a5-4806-b604-2319652944b4"
-Parent: "72438631-2152-4001-b540-1c0bb5c36f9a"
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Page Designs.yml
+ID: "5e6029de-51fd-4b89-bca1-de998ba5d729"
+Parent: "9955f51c-b186-4068-9296-2b1aa7c08a09"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page Designs
+Signature: KToKLyrW3rb1PO8msxabXs/yt08BtuIJrS+DFrY7Nx4=
+Modified: 638019519957057564
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Settings.yml
+ID: "a4eabb87-89ea-4399-a8ce-71cc6b58f1d5"
+Parent: "9955f51c-b186-4068-9296-2b1aa7c08a09"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Settings
+Signature: vBFsjHmynTS5vskJaGFNFC1ugyv3TLESPebLjQv4RcQ=
+Modified: 638019519957598732
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Page Design\__Standard Values.yml
+ID: "1fb19676-e9bf-4cb6-8529-e65a1500835f"
+Parent: "15351b3f-5b18-49d0-83e5-113eaedd671e"
+Template: "15351b3f-5b18-49d0-83e5-113eaedd671e"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page Design/__Standard Values
+Signature: 1wdJfq5nI073+AEh6/275hhUtkJH4EHS981JZIGG/+g=
+Modified: 638019519958585840
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Partial Design Folder\__Standard Values.yml
+ID: "41979c43-3293-4108-a5d1-528747ff3a4e"
+Parent: "d82d597f-4fa7-4597-be85-3ca81f08f4f6"
+Template: "d82d597f-4fa7-4597-be85-3ca81f08f4f6"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Partial Design Folder/__Standard Values
+Signature: mF3eFYERoEuxKndwEcTa3vzr0YEBOd+Rc6yYFSAGbNU=
+Modified: 638019519959138889
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Page\Content\Content.yml
+ID: "04311217-db87-460b-be0a-8baa4af83457"
+Parent: "d4d6b6a7-88b0-4790-8ec1-f8696dc7ac19"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
 Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page/Content/Content
-Signature: qe6OFH4Bpw8BRMRVECrUqJvazdg0MnYrsxTc3ATL7sU=
-Modified: 637999536075224280
+Signature: Jy/gxeCxoClsmBduElrve5ig9rvNGp9PTPGl1kdZqWg=
+Modified: 638019519958221402
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project.yml
+ID: "825b30b4-b40b-422e-9920-23a1b6bda89c"
+Parent: "3c1715fe-6a13-4fcf-845f-de308ba9741d"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Project
+Signature: HuhppE04RxjJTAch3G4hnfXx5kEg3H6ep8lqUxCPisE=
+Modified: 638019519956194761
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Page Design Folder.yml
+ID: "a9ff18e9-cbb6-49f5-a553-ee80984ef557"
+Parent: "9955f51c-b186-4068-9296-2b1aa7c08a09"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page Design Folder
+Signature: bKiIb+ehVM5FYfVfUZnpjX/sp/UtOgRuERh92sz/86s=
+Modified: 638019519956944671
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Partial Design Folder.yml
+ID: "d82d597f-4fa7-4597-be85-3ca81f08f4f6"
+Parent: "9955f51c-b186-4068-9296-2b1aa7c08a09"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Partial Design Folder
+Signature: SuB2QVEvPr4pejS9RrDpCMaXEUkQtr76DKdyyZ2Owts=
+Modified: 638019519957315464
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Site.yml
+ID: "42c330af-4c3c-444f-9f20-9f578df029cc"
+Parent: "9955f51c-b186-4068-9296-2b1aa7c08a09"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Site
+Signature: S5zTyOqnCpnMyV1g3mteTMxPG/uJKWgTQqmr6twiFcs=
+Modified: 638019519957721017
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Page\Content.yml
+ID: "d4d6b6a7-88b0-4790-8ec1-f8696dc7ac19"
+Parent: "6170867b-4d66-441b-9fe8-a1d6708468e3"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page/Content
+Signature: oTxfaqvbZKjsCFnR1xeCHGBJcVwH9y1LBlUMORKJfQM=
+Modified: 638019519957964069
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Page Designs\__Standard Values.yml
+ID: "7aada00e-800d-4152-9649-6809c65a36f0"
+Parent: "5e6029de-51fd-4b89-bca1-de998ba5d729"
+Template: "5e6029de-51fd-4b89-bca1-de998ba5d729"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page Designs/__Standard Values
+Signature: BS7RmY936WB0MephjE0KE6dfI5c+/bKgCjjbA+obn6k=
+Modified: 638019519958832197
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Settings\__Standard Values.yml
+ID: "796ba3d4-18fd-4ae0-9e65-5872eed6e2ad"
+Parent: "a4eabb87-89ea-4399-a8ce-71cc6b58f1d5"
+Template: "a4eabb87-89ea-4399-a8ce-71cc6b58f1d5"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Settings/__Standard Values
+Signature: bABZky4IOq12jrJQUbI8ZBaAQGKZ5M4b032ZComPHL4=
+Modified: 638019519959409459
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Project\serialization\Template\Project\Neptune Tenant Folder\Neptune Tenant\Page\Content\Title.yml
+ID: "e4ebef61-3be3-4b5f-a018-7bc75cb7136a"
+Parent: "d4d6b6a7-88b0-4790-8ec1-f8696dc7ac19"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Neptune Tenant Folder/Neptune Tenant/Page/Content/Title
+Signature: hihOVr57nGDmNQoPvbyVphxd0TMNKci2+ePngfKiwOw=
+Modified: 638019519958098424

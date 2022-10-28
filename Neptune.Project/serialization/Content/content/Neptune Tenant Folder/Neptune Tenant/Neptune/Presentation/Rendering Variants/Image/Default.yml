@@ -1,0 +1,42 @@
+﻿---
+ID: "7320c3a7-a91b-49d5-8374-055fb65a26c1"
+Parent: "de764e58-11f0-428d-b1c9-3e255a690c6e"
+Template: "fb3e3034-33f8-4ce8-be98-dd05010f4c22"
+Path: /sitecore/content/Neptune Tenant Folder/Neptune Tenant/Neptune/Presentation/Rendering Variants/Image/Default
+BranchID: "cc5f46b4-6376-48b6-ad03-adc13508527f"
+SharedFields:
+- ID: "90294353-706a-431c-b855-cd245824d9fa"
+  Hint: LinkField
+  Value: TargetUrl
+- ID: "e1d5adba-8348-4127-9bb6-455936653839"
+  Hint: CssClass
+  Value: "file-type-icon-media-link"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{D7856572-AFC2-4CB8-84A1-D4CAD015545D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220930T102641Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "10d2c14c-9b14-4955-972a-2d4882551052"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220930T102641Z

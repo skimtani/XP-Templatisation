@@ -4,7 +4,19 @@
       "includes": [
         {
           "name": "Renderings",
-          "path": "/sitecore/layout/Renderings/Feature/Neptune"
+          "path": "/sitecore/layout/Renderings/Feature",
+          "database": "master",
+          "rules": [
+            {
+              "path": "/Neptune",
+              "scope": "ItemAndDescendants",
+              "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+              "path": "*",
+              "scope": "ignored"
+            }
+          ]
         }
       ]
     }

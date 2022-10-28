@@ -1,19 +1,28 @@
 ﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
 ---
 File: |
-  C:\project\Neptune\Neptune\Neptune.Feature\serialization\Renderings\Neptune.yml
-ID: "c5f917b4-2013-4eeb-8d73-e12d17685d5a"
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Feature\serialization\Renderings\Feature\Neptune.yml
+ID: "145f55d1-2cf5-4394-ab44-ddf633696872"
 Parent: "da61ad50-8fdb-4252-a68f-b4470b1c9fe8"
 Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
 Path: /sitecore/layout/Renderings/Feature/Neptune
-Signature: 1OxqwVElRbvwm2qzFncnXvPMkx6Qz4hp2Wb7jisGQqU=
-Modified: 637999539120211095
+Signature: QKIVWhxzGm18SkuMMZVECw2L3pGY8F71oHrjRJMXmvg=
+Modified: 638019519955967029
 ---
 File: |
-  C:\project\Neptune\Neptune\Neptune.Feature\serialization\Renderings\Neptune\Title.yml
-ID: "3930b51b-f709-478f-bd95-c721e5734fa4"
-Parent: "c5f917b4-2013-4eeb-8d73-e12d17685d5a"
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Feature\serialization\Renderings\Feature\Neptune\Title.yml
+ID: "e07dc8b9-6704-4c38-ba61-22ecc2cb71df"
+Parent: "145f55d1-2cf5-4394-ab44-ddf633696872"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
 Path: /sitecore/layout/Renderings/Feature/Neptune/Title
-Signature: 5QuHJLNjPJPgc0fzntgaY4A3MRoHONasD5l+y3gyCQU=
-Modified: 637999539120474138
+Signature: WEeDZrCYS/ncMzSY/5IxFav//iCBzeC+I330kFmVo5Y=
+Modified: 638019519956089170
+---
+File: |
+  C:\project\Neptune\Neptune_SXA_XM - Copy\Neptune.Feature\serialization\Renderings\Feature.yml
+ID: "da61ad50-8fdb-4252-a68f-b4470b1c9fe8"
+Parent: "32566f0e-7686-45f1-a12f-d7260bd78bc3"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Feature
+Signature: qTyutRlTL3aamdH4hgQOpHSRpgKMneHGpy2wag0pAAo=
+Modified: 638019519955783454

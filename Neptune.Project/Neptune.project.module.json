@@ -3,12 +3,36 @@
   "items": {
     "includes": [
       {
-        "name": "Content",
-        "path": "/sitecore/content/Neptune Tenant Folder"
+        "name": "Template",
+        "path": "/sitecore/Templates/Project",
+        "database": "master",
+        "rules": [
+          {
+            "path": "/Neptune Tenant Folder",
+            "scope": "ItemAndDescendants",
+            "allowedPushOperations": "CreateUpdateAndDelete"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
       },
       {
-        "name": "Template",
-        "path": "/sitecore/Templates/Project/Neptune Tenant Folder"
+        "name": "Content",
+        "path": "/sitecore/content",
+        "database": "master",
+        "rules": [
+          {
+            "path": "/Neptune Tenant Folder",
+            "scope": "ItemAndDescendants",
+            "allowedPushOperations": "CreateUpdateAndDelete"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
       }
     ]
   }

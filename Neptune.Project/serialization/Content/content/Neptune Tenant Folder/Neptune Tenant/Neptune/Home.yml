@@ -1,0 +1,68 @@
+﻿---
+ID: "dd54c9ab-0cce-4884-b1d9-099658775180"
+Parent: "1fdd190b-0163-4e7b-9bf0-8d31e701a3ef"
+Template: "7a0aa293-cbc0-4d5a-add2-67b30a9ee1c0"
+Path: /sitecore/content/Neptune Tenant Folder/Neptune Tenant/Neptune/Home
+BranchID: "b90549b5-c997-4d6b-b102-c9ab82528974"
+SharedFields:
+- ID: "db51d4e9-c24d-4670-af0e-62c8aa08e2b6"
+  Hint: LocalData
+  Value: "{CEE7082F-5EA4-43DB-9FD4-6116892497E6}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{92EB9EFB-88D4-4089-82BE-AAD92D4FA24E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <p
+              uid="{BE14F25D-9D1D-49A2-BF5D-948226E59565}"
+              p:before="*"
+              s:key="main"
+              s:md="{93D1B48A-4CED-4870-90C5-D837E928C54D}" />
+            <r
+              uid="{C8997472-C76B-4BBF-9B79-5A8E57030B58}"
+              p:after="*[1=2]"
+              s:id="{E07DC8B9-6704-4C38-BA61-22ECC2CB71DF}"
+              s:par=""
+              s:ph="main" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220930T102614Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Neptune
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5f84ed54-bb6b-41c2-8bf9-43a3e49c0711"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220930T122822Z
+    - ID: "e4ebef61-3be3-4b5f-a018-7bc75cb7136a"
+      Hint: Title
+      Value: Neptune

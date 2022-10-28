@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+
+  <!-- NOTE: Transforms in this file will not apply to LOCAL.  Duplicate global changes into the Web.Helix.config as well. -->
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly xdt:Transform="RemoveAll" xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'System.Web.Mvc'))">
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="Insert">
+        <assemblyIdentity name="System.Web.Mvc" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="0.0.0.0-5.2.7.0" newVersion="5.2.4.0" />
+      </dependentAssembly>
+
+    </assemblyBinding>
+  </runtime>
+</configuration>

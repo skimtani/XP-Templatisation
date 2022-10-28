@@ -46,6 +46,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Win32.Primitives" />
+    <Reference Include="Sitecore.Analytics, Version=17.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.10.2.0\lib\net48\Sitecore.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Core, Version=17.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.Core.10.2.0\lib\net48\Sitecore.Analytics.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentTesting, Version=18.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ContentTesting.10.2.0\lib\net48\Sitecore.ContentTesting.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentTesting.Intelligence, Version=18.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ContentTesting.Intelligence.10.2.0\lib\net48\Sitecore.ContentTesting.Intelligence.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentTesting.Model, Version=18.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ContentTesting.Model.10.2.0\lib\net48\Sitecore.ContentTesting.Model.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=17.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Kernel.10.2.0\lib\net48\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
@@ -54,23 +70,49 @@
       <HintPath>..\packages\Sitecore.Mvc.10.2.0\lib\net48\Sitecore.Mvc.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.Processing.Engine.Model, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Processing.Engine.Model.10.2.0\lib\netstandard2.0\Sitecore.Processing.Engine.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Mvc, Version=9.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.XA.Foundation.Mvc.10.2.0\lib\net48\Sitecore.XA.Foundation.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Xdb.Reporting, Version=17.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Xdb.Reporting.10.2.0\lib\net48\Sitecore.Xdb.Reporting.dll</HintPath>
+    </Reference>
     <Reference Include="sysglobl" />
     <Reference Include="System" />
+    <Reference Include="System.AppContext" />
+    <Reference Include="System.Console" />
     <Reference Include="System.Data" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.Tracing" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Globalization.Calendars" />
+    <Reference Include="System.IO" />
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile" />
+    <Reference Include="System.IO.FileSystem" />
+    <Reference Include="System.IO.FileSystem.Primitives" />
     <Reference Include="System.Linq" />
+    <Reference Include="System.Linq.Expressions" />
+    <Reference Include="System.Net.Sockets" />
+    <Reference Include="System.Reflection" />
     <Reference Include="System.Runtime" />
     <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Extensions" />
     <Reference Include="System.Runtime.InteropServices" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms" />
+    <Reference Include="System.Security.Cryptography.Encoding" />
+    <Reference Include="System.Security.Cryptography.Primitives" />
+    <Reference Include="System.Security.Cryptography.X509Certificates" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Text.RegularExpressions" />
     <Reference Include="System.Threading.Thread" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -128,6 +170,7 @@
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="System.Xml.ReaderWriter" />
     <Reference Include="WebGrease">
       <Private>False</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -147,7 +190,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Project\Neptune.Website.config" />
     <None Include="Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -155,6 +197,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <None Include="web.config-Global.xdt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Neptune.Environment\Neptune.Environment.csproj">
@@ -175,6 +218,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
