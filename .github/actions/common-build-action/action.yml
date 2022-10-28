@@ -50,6 +50,10 @@ runs:
       env:
        Sitecore.CM.Url :  ${{ inputs.Sitecore_CM_Url }}
        Sitecore.CD.Url :  ${{ inputs.Sitecore_CD_Url }}
+    
+    - name: list files
+      run: Get-Content '${{ github.workspace }}Neptune.Project/serialization/Content/content/Neptune Tenant Folder/Neptune Tenant/Neptune/Settings/Site Grouping/Neptune.yml'
+      shell: pwsh
        
     - uses: actions/setup-dotnet@v3
       with:
