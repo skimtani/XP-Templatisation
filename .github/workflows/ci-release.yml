@@ -30,18 +30,29 @@ jobs:
       SCSPackageName: ${{ github.event.inputs.SCSPackageName }}
       PackageName: ${{ github.event.inputs.PackageName}}
       environment: DEV-CM
-      webapp-name: "hello-neptune-cm"
+      webapp-name: "test-neptune-cm"
+      webapp-type: "cm"
       resource-group-name: "neptune"
-      cm-url: "https://hello-neptune-cm.azurewebsites.net"
-      identity-url: "https://hello-neptune-si.azurewebsites.net"
+      cm-url: "https://test-neptune-cm.azurewebsites.net/"
+      identity-url: "https://test-neptune-si.azurewebsites.net/"
       sitecore-clientID: "SitecoreCLIServer"
       sitecore-clientSecret: "O1GS2BIT96A9CL73NY5GMACH53JEO1Y"
-  # DEV-CD:
-  #   uses: ./.github/workflows/ci-release-template-cm.yml
-  #   needs: GetArtifacts
-  #   with:
-  #     nuget_version: ${{ needs.GetArtifacts.outputs.version_number }}
-  #     SCSPackageName: ${{ github.event.inputs.SCSPackageName }}
-  #     PackageName: ${{ github.event.inputs.PackageName}}
-  #     environment: DEV-CM
+      ClientName: Neptune
+  DEV-CD:
+    uses: ./.github/workflows/ci-release-template-cd.yml
+    needs: GetArtifacts
+    with:
+      nuget_version: ${{ needs.GetArtifacts.outputs.version_number }}
+      SCSPackageName: ${{ github.event.inputs.SCSPackageName }}
+      PackageName: ${{ github.event.inputs.PackageName}}
+      environment: DEV-CD
+      webapp-name: "test-neptune-cd"
+      webapp-type: "cd"
+      resource-group-name: "neptune"
+      cm-url: "https://test-neptune-cm.azurewebsites.net/"
+      cd-url: "https://test-neptune-cd.azurewebsites.net/"
+      identity-url: "https://test-neptune-si.azurewebsites.net/"
+      sitecore-clientID: "SitecoreCLIServer"
+      sitecore-clientSecret: "O1GS2BIT96A9CL73NY5GMACH53JEO1Y"
+      ClientName: Neptune
       

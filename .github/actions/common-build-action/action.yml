@@ -18,11 +18,11 @@ inputs:
     required: true
     default: ''
   Sitecore_CM_Url:
-    description: ''
+    description: 'Sitecore cm url'
     required: true
     default: ''
   Sitecore_CD_Url:
-    description: ''
+    description: 'Sitecore cd url'
     required: true
     default: ''
 runs:
