@@ -112,7 +112,7 @@ jobs:
       run: dir ${{ github.workspace }}
       shell: pwsh
    
-    - name: Install Item Package
+    - name: Publish Sitecore Content items
       shell: pwsh
       working-directory: ${{ github.workspace }}
       run: |
@@ -134,7 +134,7 @@ jobs:
         #Write-Host "Initiating Role Serialization sync"
         #dotnet sitecore ser push
   
-    - name: 'Perform Health Check of CM'
+    - name: 'Perform Health Check of CD'
       working-directory: ${{ github.workspace }}\deploy\Sitecore.Deployment\build\scripts
       run: |
         .\healthCheck.ps1 -http_RequestUrl '${{ inputs.cd-url }}/sitecore/service/keepalive.aspx' -http_RequestRetries 100 -http_RequestTimeout 1000 -http_RetrySeconds 30
