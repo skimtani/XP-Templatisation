@@ -59,4 +59,9 @@ jobs:
       sitecore-clientID: "SitecoreCLIServer"
       sitecore-clientSecret: "O1GS2BIT96A9CL73NY5GMACH53JEO1Y"
       ClientName: Neptune
+    secrets:
+      CLIENT_ID: ${{ secrets.CLIENT_ID }}
+      CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+      SUBSCRIPTION_ID: ${{ secrets.SUBSCRIPTION_ID }}
+      TENANT_ID: ${{ secrets.TENANT_ID }}
       
