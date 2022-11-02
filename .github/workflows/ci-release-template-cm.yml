@@ -40,9 +40,6 @@ on:
         required: true
         type: string
 
-permissions:
-      id-token: write
-      contents: read
 
 jobs:
   cm-job:
@@ -67,7 +64,7 @@ jobs:
     #     enable-AzPSSession: true
     - uses: Azure/login@v1
       with:
-        creds: ${{ secrets.SERVICE_PRINCIPLE }}
+        creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
         enable-AzPSSession: true
     - name: 'Stop CM WebAPP'
       uses: azure/powershell@v1
