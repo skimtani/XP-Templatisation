@@ -67,7 +67,7 @@ jobs:
     #     enable-AzPSSession: true
     - uses: Azure/login@v1
       with:
-        creds: '{"clientId":"3f816198-befe-4e29-a575-37837f90bf60","clientSecret":"HG68Q~qYkDPzYE40W9GXnGoqu_qErZsCLqY.cbbk","subscriptionId":"7fb1a0c1-ea2c-4d6e-aab1-a7e96e350865","tenantId":"4c31935f-277d-4f84-bc78-b2d637b109d9"}'
+        creds: ${{ secrets.SERVICE_PRINCIPLE }}
         enable-AzPSSession: true
     - name: 'Stop CM WebAPP'
       uses: azure/powershell@v1
