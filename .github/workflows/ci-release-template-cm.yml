@@ -57,7 +57,7 @@ jobs:
         PackageName: ${{ inputs.PackageName }}
     - uses: Azure/login@v1
       with:
-        creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+        creds: '{"clientId": ${{ secrets.CLIENT_ID }}, "clientSecret": ${{ secrets.CLIENT_SECRET }},"subscriptionId": ${{ secrets.SUBSCRIPTION_ID }},"tenantId": ${{ secrets.TENANT_ID }}}'
         enable-AzPSSession: true
     - name: 'Stop CM WebAPP'
       uses: azure/powershell@v1
