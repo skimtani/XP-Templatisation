@@ -39,7 +39,15 @@ on:
       ClientName:
         required: true
         type: string
-
+    secrets:
+      CLIENT_ID:
+        required: true
+      CLIENT_SECRET:
+        required: true
+      SUBSCRIPTION_ID:
+        required: true
+      TENANT_ID:
+        required: true
 
 jobs:
   cm-job:
